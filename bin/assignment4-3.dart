@@ -16,7 +16,7 @@ void main(List<String> arguments){
 
   while(number != '')
   {
-    print('enter');
+    print('Enter as many numbers as you would like, when you are done press enter');
     number = int.tryParse(stdin.readLineSync());
     numberList.add(number);
 
