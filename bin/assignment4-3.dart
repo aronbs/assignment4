@@ -9,31 +9,30 @@ void main(List<String> arguments){
   //3
 
 
-  String numbers = null;
-  List<String> numberList = [];
-  List<int> numberListToInt = [];
-  int lowestNum = null;
-  int highestNum = null;
+  List<int> numberList = [];
+  int number = null;
 
 
-  while(numbers != '')
+
+  while(number != '')
+  {
+    print('enter');
+    number = int.tryParse(stdin.readLineSync());
+    numberList.add(number);
+
+    if(number == null)
     {
-      print('Enter a number and when you are done press enter');
-      numbers = stdin.readLineSync();
-      numberList.add(numbers);
-
+      break;
     }
-    numberList.removeLast();
 
-    print('Printing out you\'re highest and lowest numbers: ');
+  }
+  numberList.removeLast();
+  print('The numbers you entered were: ${numberList.join(',')}');
 
+  numberList.sort();
 
-    for(String num in numberList)
-      {
-
-      }
-
-    print('Exiting program');
+  print('The largest number was: ${numberList.last}');
+  print('The smallest number was: ${numberList.first}');
 
 
 
