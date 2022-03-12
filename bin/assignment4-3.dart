@@ -11,6 +11,7 @@ void main(List<String> arguments){
 
   String numbers = null;
   List<String> numberList = [];
+  List<int> numberListToInt = [];
   int lowestNum = null;
   int highestNum = null;
 
@@ -20,6 +21,7 @@ void main(List<String> arguments){
       print('Enter a number and when you are done press enter');
       numbers = stdin.readLineSync();
       numberList.add(numbers);
+
     }
     numberList.removeLast();
 
@@ -32,6 +34,10 @@ void main(List<String> arguments){
       }
 
     print('Exiting program');
+
+
+
+
 
 
 
