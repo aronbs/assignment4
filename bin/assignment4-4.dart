@@ -24,6 +24,7 @@ void main(List<String> arguments){
         reversedStringList.add(stringList[i]);
       }
     print('These are the words you entered but in a reversed order: ${reversedStringList.join(', ')}');
+    //Getur líka gert stringList.reverse
 
 
 
